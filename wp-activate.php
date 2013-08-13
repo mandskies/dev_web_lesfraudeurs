@@ -6,8 +6,6 @@
  * @package WordPress
  */
 
-/**TEST WATSONIQUE */
-
 /** Define ABSPATH as this file's directory */
 define( 'WP_INSTALLING', true );
 

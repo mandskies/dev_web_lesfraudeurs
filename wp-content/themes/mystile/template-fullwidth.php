@@ -28,11 +28,15 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && basename( __FILE__ ) == basename(
         		while ( have_posts() ) { the_post(); $count++;
         ?>                                                             
                 <article <?php post_class(); ?>>
-					
+					<?php 
+					/*
+					 * Suppression du titre dans l'affichage du template full width
 					<header>
-						<h1><?php the_title(); ?></h1>
+						<h1>the_title(); </h1>
 					</header>
-                    
+					 * 
+					 */?>
+
                     <section class="entry">
 	                	<?php the_content(); ?>
 	               	</section><!-- /.entry -->
